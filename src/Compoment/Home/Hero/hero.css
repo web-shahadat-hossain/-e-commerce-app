@@ -1,0 +1,118 @@
+.hero {
+  height: 80vh;
+  margin: 0 3rem;
+}
+.hero .row {
+  height: 100%;
+  background: url("../../../Assets/images/bg.svg") center / cover no-repeat
+    fixed;
+  border-radius: 2rem;
+  position: relative;
+}
+
+.hero .row .col {
+  margin-left: 5rem;
+}
+.hero .row .col .subtitle {
+  display: block;
+  font-size: 1.8rem;
+  margin-bottom: 4rem;
+}
+.hero .row .col h1 {
+  font-family: "Aclonica", sans-serif;
+  font-size: 13rem;
+  line-height: 1;
+}
+.hero .row .col h1 .i {
+  color: var(--primary-color);
+  position: relative;
+}
+.hero .row .col h1 .i::before {
+  content: "ı";
+  position: absolute;
+  color: var(--black-color);
+}
+
+.hero .row .col p {
+  font-size: 2rem;
+  margin-bottom: 6rem;
+}
+.hero .row .col .btn {
+  display: inline-block;
+  padding: 1.5rem 6rem;
+  border-radius: 1rem;
+  color: var(--white-color);
+  font-weight: 500;
+  font-size: 1.8rem;
+  background: var(--btn-gradient);
+  box-shadow: var(--box-shadow-2);
+}
+.hero .row img {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+@media (max-width: 1600px) {
+  .hero .row img {
+    width: 40rem;
+  }
+}
+
+@media (max-width: 1200px) {
+  .hero .row .col h1 {
+    font-size: 8rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero .row .col {
+    position: absolute;
+    top: 10%;
+    margin-left: 0;
+  }
+
+  .hero .row .col .subtitle {
+    font-size: 1.6rem;
+  }
+  .hero .row .col h1 {
+    font-size: 7rem;
+  }
+  .hero .row .col p {
+    font-size: 1.6rem;
+  }
+
+  .hero .row .col .btn {
+    padding: 1.2rem 4rem;
+  }
+  .hero .row img {
+    width: 40rem;
+  }
+}
+
+@media (max-width: 567px) {
+  .hero {
+    height: 100vh;
+    margin: 0 1rem;
+  }
+  .hero .row .col .subtitle {
+    font-size: 1.6rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .hero .row .col h1 {
+    font-size: 7rem;
+  }
+  .hero .row .col p {
+    font-size: 1.6rem;
+    margin-bottom: 2rem;
+  }
+
+  .hero .row .col .btn {
+    padding: 1.2rem 4rem;
+  }
+
+  .hero .row img {
+    width: 25rem;
+  }
+}
