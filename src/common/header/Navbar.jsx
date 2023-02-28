@@ -13,7 +13,9 @@ const Navbar = () => {
               <img src={logo} alt="" />
             </div>
             <div className={`nav-list d-flex ${open ? "show" : ""}`}>
-              <Link to="/">Home</Link>
+              <Link style={{ color: "#ff5e3a" }} to="/">
+                Home
+              </Link>
               <Link to="/">Shop</Link>
               <Link to="/">Pages</Link>
               <Link to="/">About Us</Link>

@@ -6,7 +6,7 @@ const Hero = () => {
   return (
     <div>
       <div class="hero">
-        <div class="row container d-flex">
+        <div class="row container hero_container ">
           <div class="col">
             <span class="subtitle">Limited Time Only For Winter</span>
             <h1>
@@ -16,7 +16,9 @@ const Hero = () => {
 
             <button class="btn">Explore Now!</button>
           </div>
-          <img src={cart} alt="" />
+          <div className="hero-img">
+            <img src={cart} alt="" />
+          </div>
         </div>
       </div>
     </div>
