@@ -1,0 +1,10 @@
+.our_statistics {
+  background: linear-gradient(
+    180deg,
+    rgba(252, 203, 144, 0.15) 0%,
+    rgba(255, 185, 188, 0.1) 61.91%
+  );
+  width: 100%;
+  padding: 57px 0 50px 0;
+  margin-bottom: 50px;
+}
