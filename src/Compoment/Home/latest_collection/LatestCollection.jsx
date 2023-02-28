@@ -10,11 +10,13 @@ const LatestCollection = () => {
     <section>
       <div className="container">
         <div className="latest_collection">
-          <div className="latest_collection_head">
-            <h4>New Arrival</h4>
-            <img src={Exclude} alt="" />
+          <div className="common_title">
+            <div className="latest_collection_head">
+              <h4>New Arrival</h4>
+              <img src={Exclude} alt="" />
+            </div>
+            <h2>Latest Collection</h2>
           </div>
-          <h2>Latest Collection</h2>
           <div className="latest_collection_container">
             <div>
               <div className="poster1 poster">

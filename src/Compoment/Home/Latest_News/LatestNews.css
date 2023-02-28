@@ -1,0 +1,67 @@
+.LatestNews_container {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.LatestNews {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(3, 3fr);
+  gap: 25px;
+}
+.LatestNews article {
+  background: #ffffff;
+  box-shadow: 0px 10px 50px 5px rgba(0, 0, 0, 0.02);
+  border-radius: 25px 25px 25px 25px;
+}
+.LatestNews article img {
+  border-radius: 25px 25px 0 0;
+}
+.LatestNews article div {
+  text-align: center;
+  padding: 20px 70px 5px 70px;
+}
+.LatestNews article div h4 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  color: #ff5e3a;
+  margin-bottom: 10px;
+}
+.LatestNews article div p {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  margin-bottom: 10px;
+  color: #000000;
+}
+.LatestNews article div h6 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 25px;
+  /* identical to box height, or 156% */
+
+  color: #909090;
+}
+
+@media only screen and (max-width: 1047px) {
+  .LatestNews article div {
+    text-align: center;
+    padding: 20px 50px 5px 50px;
+  }
+}
+@media only screen and (max-width: 921px) {
+  .LatestNews {
+    grid-template-columns: repeat(2, 3fr);
+  }
+}
+@media only screen and (max-width: 600px) {
+  .LatestNews {
+    grid-template-columns: repeat(1, 3fr);
+  }
+}

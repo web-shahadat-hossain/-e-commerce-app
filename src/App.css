@@ -40,7 +40,7 @@ body {
   font-size: 1.6rem;
   font-weight: 400;
   color: var(--black-color);
-  background-color: var(--white-color);
+  background-color: #fafafa;
 }
 
 h1,
@@ -99,4 +99,26 @@ img {
 .d-flex {
   display: flex;
   align-items: center;
+}
+
+.common_title h2 {
+  text-align: center;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 25px;
+  color: var(--black-color);
+  margin-top: 20px;
+}
+.common_title {
+  text-align: center;
+}
+.common_title h4 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  /* line-height: 10px; */
+  color: var(--black-color);
 }

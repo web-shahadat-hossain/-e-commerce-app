@@ -5,16 +5,16 @@ import cart from "../../../Assets/images/woman-in-cart.png";
 const Hero = () => {
   return (
     <div>
-      <div class="hero">
-        <div class="row container hero_container ">
-          <div class="col">
-            <span class="subtitle">Limited Time Only For Winter</span>
+      <div className="hero">
+        <div className="row container hero_container ">
+          <div className="col">
+            <span className="subtitle">Limited Time Only For Winter</span>
             <h1>
-              fash<span class="i">i</span>on
+              fash<span className="i">i</span>on
             </h1>
             <p>LOOK YOUR BEST ON YOUR BEST DAY</p>
 
-            <button class="btn">Explore Now!</button>
+            <button className="btn">Explore Now!</button>
           </div>
           <div className="hero-img">
             <img src={cart} alt="" />
