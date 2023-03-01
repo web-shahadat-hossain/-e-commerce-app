@@ -1,27 +1,33 @@
 import React from "react";
 import "./footer.css";
-import logo from "../../Assets/images/logo.svg";
+import logo from "../../Assets/images/Vector (1).png";
 
 const Footer = () => {
   return (
     <footer>
       <div className="container footer_container">
         <div>
-          <img src={logo} alt="" />
+          <div
+            style={{ display: "flex", alignItems: "center" }}
+            className="logo"
+          >
+            <img src={logo} alt="" />
+            <span style={{ paddingLeft: "10px" }}>Fashion</span>
+          </div>
 
           <p>Lorem ispum is a placeholder text commonly used as a free text.</p>
           <div className="footer_social">
             <a href="https://www.facebook.com/globalitmaster">
-              <i class="bx bxl-facebook"></i>
+              <i className="bx bxl-facebook"></i>
             </a>
             <a href="https://twitter.com/GlobalITMaster">
-              <i class="bx bxl-instagram"></i>
+              <i className="bx bxl-instagram"></i>
             </a>
             <a href="https://twitter.com/GlobalITMaster">
-              <i class="bx bxl-twitter"></i>
+              <i className="bx bxl-twitter"></i>
             </a>
             <a href="https://twitter.com/GlobalITMaster">
-              <i class="bx bxl-youtube"></i>
+              <i className="bx bxl-youtube"></i>
             </a>
           </div>
           <h6>Copyrights 2021 @Iamabdulqadeer01</h6>
@@ -66,19 +72,19 @@ const Footer = () => {
           <div className="footer_contact">
             <p>
               <span>
-                <i class="bx bx-location-plus"></i>
+                <i className="bx bx-location-plus"></i>
               </span>
               Nurpur Road No. 1, Dania
             </p>
             <p>
               <span>
-                <i class="bx bxs-envelope"></i>
+                <i className="bx bxs-envelope"></i>
               </span>
               info@globalitmaster.com
             </p>
             <p>
               <span>
-                <i class="bx bx-phone"></i>
+                <i className="bx bx-phone"></i>
               </span>
               +8809611745310
             </p>

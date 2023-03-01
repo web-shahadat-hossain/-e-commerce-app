@@ -10,6 +10,16 @@
 .header .navbar .row {
   justify-content: space-between;
 }
+.logo span {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  /* identical to box height */
+
+  color: #ff5151;
+}
 .header .navbar .row .nav-list a {
   display: inline-block;
   padding: 1rem;

@@ -62,7 +62,7 @@ export const ourStatistics = [
     title: "24/7 Customer Support ",
     description:
       "Lorem Ispum is a placeholder text commomly used as a free text.",
-    icons: icon3,
+    icons: icon4,
     id: 4,
   },
 ];

@@ -4,11 +4,13 @@ import LatestCollectionUpdate from "./LatestCollectionCATEGORIES/LatestCollectio
 import LatestCollection from "./latest_collection/LatestCollection";
 import LatestNews from "./Latest_News/LatestNews";
 import OurStatistics from "./OurStatistics/OurStatistics";
+import OurTopCollection from "./OurTopCollection/OurTopCollection";
 
 const Home = () => {
   return (
     <Fragment>
       <Hero />
+      <OurTopCollection />
       <LatestCollection />
       <LatestCollectionUpdate />
       <OurStatistics />

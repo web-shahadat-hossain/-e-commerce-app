@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
 
     <!-- ====== Favicon ====== -->
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <link rel="icon" href="./Vector.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
     <meta
@@ -15,15 +15,33 @@
 
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
 
-    <title>Global IT Master</title>
+    <title>Fashion</title>
 
     <!-- ====== Boxicons ====== -->
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
+    <style>
+      .containers {
+        align-items: center;
+        background-color: #ebedef;
+        display: flex;
+        height: 100vh;
+        justify-content: center;
+        width: 100%;
+      }
+      .containers img {
+        width: 100px;
+      }
+    </style>
   </head>
   <body>
+    <div id="spinner" class="containers">
+      <!-- <div className="loading"></div> -->
+
+      <img src="./lg.ring-loading-gif.gif" alt="" />
+    </div>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
   </body>

@@ -1,7 +1,6 @@
 import React, { Fragment, useState } from "react";
 import { Link } from "react-router-dom";
-import logo from "../../Assets/images/logo.svg";
-
+import logo from "../../Assets/images/Vector (1).png";
 const Navbar = () => {
   const [open, setOpen] = useState(false);
   return (
@@ -9,8 +8,12 @@ const Navbar = () => {
       <header className="header">
         <nav className="navbar">
           <div className="row d-flex container">
-            <div className="logo">
+            <div
+              style={{ display: "flex", alignItems: "center" }}
+              className="logo"
+            >
               <img src={logo} alt="" />
+              <span style={{ paddingLeft: "10px" }}>Fashion</span>
             </div>
             <div className={`nav-list d-flex ${open ? "show" : ""}`}>
               <Link style={{ color: "#ff5e3a" }} to="/">

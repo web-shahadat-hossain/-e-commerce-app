@@ -14,10 +14,10 @@ const LatestCollectionUpdate = () => {
       <div className="container">
         <div className="common_title">
           <div>
-            <h4>STATS</h4>
+            <h4>CATEGORIES</h4>
             <img src={Exclude} alt="" />
           </div>
-          <h2>Our Statistics</h2>
+          <h2>2023 Latest Collection</h2>
         </div>
         <div className="latest_collection_update_container_card">
           {products.slice(0, 8).map((product, i) => (
@@ -25,8 +25,18 @@ const LatestCollectionUpdate = () => {
               className="latest_collection_update_container_card_products"
               key={i}
             >
-              <div className="latest_collection_update_container_card_products_img">
+              <div
+                className={`latest_collection_update_container_card_products_img ${
+                  product.id === 3 &&
+                  "latest_collection_update_container_card_products_img3 "
+                }`}
+              >
                 <img src={product.url} alt="" />
+                {product.id === 3 ? (
+                  <img className="icon" src={product.icon} alt="" />
+                ) : (
+                  ""
+                )}
               </div>
               <div className="latest_collection_update_container_card_products_content">
                 <div>
@@ -35,17 +45,18 @@ const LatestCollectionUpdate = () => {
                 <div className="latest_collection_update_container_card_products_content_box">
                   <h6>$80</h6>
                   <div>
-                    <i class="bx bxs-star"></i>
-                    <i class="bx bxs-star"></i>
-                    <i class="bx bxs-star"></i>
-                    <i class="bx bxs-star"></i>
-                    <i class="bx bxs-star"></i>
+                    <i className="bx bxs-star"></i>
+                    <i className="bx bxs-star"></i>
+                    <i className="bx bxs-star"></i>
+                    <i className="bx bxs-star"></i>
+                    <i className="bx bxs-star"></i>
                   </div>
                 </div>
               </div>
             </div>
           ))}
         </div>
+        <button className="btn">Explore Now!</button>
       </div>
     </section>
   );
