@@ -12,6 +12,6 @@ This made a landing page using React js, CSS.
 
 ## Links
 
-Live Link [Markdown Live Preview](https://globalitmasterfashion.netlify.app/).
+Live Link [Fashion](https://globalitmasterfashion.netlify.app/).
 
 ![My Image](./fashion.png)
