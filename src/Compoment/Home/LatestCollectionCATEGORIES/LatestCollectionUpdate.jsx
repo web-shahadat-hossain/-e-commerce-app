@@ -4,11 +4,13 @@ import Exclude from "../../../Assets/images/Exclude.png";
 
 const LatestCollectionUpdate = () => {
   const [products, setProducts] = useState([]);
+  const [explore, setExplore] = useState(8);
   useEffect(() => {
     fetch("products.json")
       .then((response) => response.json())
       .then((json) => setProducts(json.products));
   }, []);
+  console.log(explore);
   return (
     <section className="latest_collection_update_container">
       <div className="container">
@@ -20,7 +22,7 @@ const LatestCollectionUpdate = () => {
           <h2>2023 Latest Collection</h2>
         </div>
         <div className="latest_collection_update_container_card">
-          {products.slice(0, 8).map((product, i) => (
+          {products.slice(0, explore).map((product, i) => (
             <div
               className="latest_collection_update_container_card_products"
               key={i}
@@ -56,7 +58,9 @@ const LatestCollectionUpdate = () => {
             </div>
           ))}
         </div>
-        <button className="btn">Explore Now!</button>
+        <button onClick={() => setExplore(products.length)} className="btn">
+          Explore Now!
+        </button>
       </div>
     </section>
   );

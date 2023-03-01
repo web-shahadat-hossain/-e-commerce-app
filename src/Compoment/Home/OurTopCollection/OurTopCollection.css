@@ -62,7 +62,12 @@
   );
   border-radius: 25px;
   margin: auto;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.Our_Top_Collection_container .products .product:hover {
   box-shadow: var(--box-shadow-1);
+  transform: scale(1.1);
 }
 .Our_Top_Collection_container .products .product img {
   width: 200px;

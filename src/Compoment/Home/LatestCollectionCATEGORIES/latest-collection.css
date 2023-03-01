@@ -20,6 +20,11 @@
   width: 285px;
   height: 330px;
   margin: auto;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.latest_collection_update_container_card_products:hover {
+  box-shadow: var(--box-shadow-1);
 }
 .latest_collection_update_container_card_products_img {
   background: #f0f0f0;
@@ -48,7 +53,7 @@
 }
 .latest_collection_update_container_card_products div img {
   width: 200px;
-
+  height: 210px;
   display: inline-block;
 }
 .latest_collection_update_container_card_products_content {
